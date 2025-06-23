@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Clicker</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="left">
+                <p>Gemas: <br/> <span class="gem-cost texto-amarelo">0</span></p>
+                <div class="gem-img-container">
+                    <img src="imgs/gema_game-semfundo.png" alt="" srcset="" class="gem-img" onclick="incrementGem(event)" draggable="false">
+                </div>
+                
+
+            </div>
+            <div class="right">
+                
+                <div class="upgrade" onclick="buyClicker()">
+                    <div class="left-section">
+                            <img src="imgs/16759336940faaf5d49e78071c222360ed7cfd6622_thumbnail_720x-removebg-preview.png" alt="" class="foto-do-upgrade">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Quebrador de ovo</h4>
+                        <div class="custo-info">
+                            <p class="texto-custo"> <span class="clicker-cost">10</span></p>
+                            <img src="imgs/gema_ovo-removebg-preview.png" alt="" class="imagem-da-gema">
+                        </div>
+                    </div>
+                    <div class="right-section"> Level <span class="clicker-level">0</span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="clicker-increase">1</span> gemas por ovo quebrado
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="upgrade" onclick="buyPoteDeGemas()">
+                    <div class="left-section">
+                            <img id="pote-de-gemas" src="imgs/pote_de_gemas-removebg-preview.png" alt="" class="foto-do-upgrade">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Pote de gemas</h4>
+                        <div class="custo-info">
+                            <p class="texto-custo"> <span class="Pote-de-gemas-cost">130</span></p>
+                            <img src="imgs/gema_ovo-removebg-preview.png" alt="" class="imagem-da-gema">
+                        </div>
+                    </div>
+                    <div class="right-section"> Level <span class="Pote-de-gemas-level">0</span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="Pote-de-gemas-increase">4</span> gemas por segundo
+                        </p>
+                    </div>
+                </div>
+
+
+
+                  <div class="upgrade" onclick="buyGemaCozida()">
+                    <div class="left-section">
+                            <img src="imgs/gema_cozida-removebg-preview.png" alt="" class="foto-do-upgrade">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Gema cozida</h4>
+                        <div class="custo-info">
+                            <p class="texto-custo"> <span class="gema-cozida-cost">850</span></p>
+                            <img src="imgs/gema_ovo-removebg-preview.png" alt="" class="imagem-da-gema">
+                        </div>
+                    </div>
+                    <div class="right-section"> Level <span class="gema-cozida-level">0</span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="gema-cozida-increase">24</span> gemas por segundo
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="estatisticas">
+            <div class="textos">
+                <p>GPC: <span id="gpc-texto" class="texto-amarelo">1</span></p>
+                <p>GPS: <span id="gps-texto" class="texto-amarelo">0</span></p>
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+</html>
